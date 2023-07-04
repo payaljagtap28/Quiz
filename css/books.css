@@ -1,0 +1,64 @@
+.books_container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.books_container .box {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    margin-top: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 20px #bdbdbd;
+    border-radius: 2rem;
+}
+
+.books_container .box .first {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.box .first .heading {
+    font-weight: bold;
+}
+
+.box .first .price {
+    font-size: 4rem;
+    color: purple;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box .first .offer {
+    color: red;
+    animation: animBlink 2s infinite linear reverse;
+}
+
+@keyframes animBlink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.box .first .btnBuy {
+    width: fit-content;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+@media(max-width: 992px) {
+    .books_container {
+        grid-template-columns: repeat(1, minmax(350px, 1fr));
+    }
+}

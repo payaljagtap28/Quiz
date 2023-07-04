@@ -1,0 +1,85 @@
+.prep_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.prep_container .box{
+    /* border: 2px solid #80808064; */
+    cursor: pointer;
+    color: black;
+    /* background-color: #ffffff7e; */
+    background-color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px grey;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px #bdbdbd;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.prep_container .box:hover{
+    border: 1px solid grey;
+}
+
+.prep_container .box ul{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: 'Pippins', sans-serif;
+    text-align: left;
+    list-style: circle;
+    text-shadow: none;
+}
+
+.prep_container .box ul li a{
+    padding: .2rem;
+    color: blue;
+    text-decoration: none;
+}
+.prep_container .box ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.header{
+    height: 90vh;
+    flex-direction: column;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header img{
+    width: 25rem;
+}
+
+.header .heading{
+    font-size: 5rem;
+}
+
+.header .heading span{
+    color: purple;
+    font-weight: bold;
+    font-size: 6rem;
+}
+.header .subheading{
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+/* .prep_container .dropdown{
+    /* position: absolute; */
+    /* display: none; */
+    /* background-color: white; */
+    /* font-size: 2rem; */
+/* } */
+
+/* .prep_container div:hover .dropdown{ */
+    /* display: block; */
+/* } */ 

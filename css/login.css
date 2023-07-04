@@ -1,0 +1,61 @@
+
+.div_login {
+    max-width: 360px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 30px rgb(186, 186, 186);
+}
+
+.div_login img{
+    width: 50px;
+}
+
+.div_login h2{
+    font-size: 4rem;
+}
+
+.div_login p{
+    font-size: 2rem;
+}
+
+.div_login input{
+    font-size: 2rem;
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #f4f4f4;
+    font-weight: 500;
+}
+
+.div_login button{
+    width: 20rem;
+    background-color: white;
+    border: none;
+    margin-top: 2.5rem;
+    padding: .8rem 2.5rem .8rem 2.5rem;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    background-color: purple;
+    color: white;
+}
+
+.div_login button:hover{
+    animation: zoom .5s both;
+}
+
+footer{
+    margin-top: 15rem;
+}
+
+@keyframes zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(.8);
+    }
+}

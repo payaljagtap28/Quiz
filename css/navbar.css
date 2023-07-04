@@ -1,0 +1,71 @@
+
+
+nav{
+    display: flex;
+    align-items: center;
+    /* background-color: #ffffff7b; */
+    background-color: white;
+    /* margin-top: 2rem; */
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 2rem;
+    overflow: hidden;
+    padding-right: 2rem;
+    /* border-radius: 50px; */
+    backdrop-filter: blur(5px);
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+nav .list{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+nav .list .item a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.345);
+    padding: .8rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+nav .active{
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+nav .list .item a:hover{
+    background-color: rgba(255, 255, 255, 0.734);
+}
+
+nav .btnLanguage{
+    font-size: 2rem;
+}
+
+#app_logo{
+    width: 70px;
+    /* filter: invert(100%); */
+    border-radius: 100px;
+    padding: .3rem;
+}
+
+@media (max-width: 768px){
+    #app_logo{
+        width: 40px;
+        /* filter: invert(100%); */
+        border-radius: 100px;
+        padding: .3rem;
+    }
+
+    nav .list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

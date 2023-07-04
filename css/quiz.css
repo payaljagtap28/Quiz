@@ -1,0 +1,37 @@
+.quiz_container{
+    padding: 2rem;
+}
+
+.quiz_container .box{
+    max-width: 700px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 20px #a9a9a9;
+}
+
+.quiz_container .box .question{
+    font-size: 2.5rem;
+    color: black;
+}
+.quiz_container .box .option{
+    font-size: 2rem;
+}
+.quiz_container .box .option span{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.quiz_container .box details{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+.quiz_container .box details .answer{
+    font-size: 2.5rem;
+    color: rgb(15, 155, 0);
+}
+.quiz_container .box details .explain{
+    font-size: 2rem;
+    color: rgb(57, 57, 57);
+}
